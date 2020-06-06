@@ -1,2 +1,2 @@
 # PDF-Reader
-A Simple PDF Reader Application using java script
+A Simple PDF Viewer Application using java script
