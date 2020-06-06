@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <title>PDF Viewer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row mb-3 mt-3">
+            <h3 class="text-primary">PDF Viewer</h3>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+                <input type="file" name="pdfReader" accept="application/pdf" id="pdfFileReader" class="form-control">
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-3" style="width: 100%;">
+            <button class="btn btn-link btn-sm" id="prev-page"><i class="fas fa-arrow-circle-left"></i> Prev Page</button>
+            <button class="btn btn-link btn-sm" id="next-page">Next Page <i class="fas fa-arrow-circle-right"></i></button>
+            <span class="page-info ml-auto text-info">
+                Page 
+                <span class="text-primary" id="page-num"></span>
+                of
+                <span class="text-primary" id="total-page"></span>
+            </span>
+        </div>
+        <!-- Start Of Main Content -->
+        <div class="row card mb-5">
+            <canvas id="pdf-render"></canvas>
+        </div>
+        <!-- End Of Main Content -->
+    </div>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
